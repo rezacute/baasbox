@@ -1,6 +1,7 @@
 FROM	tsuru/play
 WORKDIR /baasbox
 RUN apt-get install unzip -y --force-yes
+RUN apt-get install wget -y --force-yes
 RUN wget --content-disposition http://www.baasbox.com/download/baasbox-stable.zip
 RUN unzip baasbox*.zip
 RUN rm baasbox*.zip
