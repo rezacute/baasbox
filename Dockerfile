@@ -1,4 +1,4 @@
-FROM registry.hub.docker.com/_/java/:oracle-java8
+FROM relateiq/oracle-java8
 MAINTAINER Cesare Rocchi <c.rocchi@baasbox.com>
 WORKDIR /baasbox
 
