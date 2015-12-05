@@ -1,7 +1,6 @@
-FROM relateiq/oracle-java8
-MAINTAINER Cesare Rocchi <c.rocchi@baasbox.com>
+FROM	tsuru/play
 WORKDIR /baasbox
-
+RUN apt-get install unzip -y --force-yes
 RUN wget --content-disposition http://www.baasbox.com/download/baasbox-stable.zip
 RUN unzip baasbox*.zip
 RUN rm baasbox*.zip
